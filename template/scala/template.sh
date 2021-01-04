@@ -1,6 +1,6 @@
 #!/bin/bash
 
-SPARK_APPLICATION_JAR_LOCATION=`find /app/target -iname '*-assembly-*.jar' | head -n1`
+SPARK_APPLICATION_JAR_LOCATION=`find /app/project/spark_test/target -iname '*-assembly-*.jar' | head -n1`
 export SPARK_APPLICATION_JAR_LOCATION
 
 if [ -z "$SPARK_APPLICATION_JAR_LOCATION" ]; then
